@@ -20,21 +20,28 @@ Gold News is a mobile application that provides real-time information about gold
 ## 🛠️ Tech Stack
 
 - **Framework:** Flutter 3.8.1+
+- **Architecture:** MVVM (Model-View-ViewModel)
 - **State Management:** flutter_bloc (9.1.1)
 - **HTTP Client:** Dio (5.9.1)
 - **Language:** Dart
 
 ## 📂 Project Structure
 
+This project follows the **MVVM (Model-View-ViewModel)** architecture pattern for clean separation of concerns:
+
 ```
 lib/
 ├── core/
 │   ├── constants/       # App-wide constants (colors, strings, styles)
 │   ├── networking/      # API configuration and HTTP client
-│   ├── presentation/    # Shared screens
+│   ├── presentation/    # Shared screens (Views)
 │   ├── routing/         # Navigation and route management
 │   └── widgets/         # Reusable UI components
 ├── features/            # Feature modules (organized by domain)
+│   └── [feature_name]/
+│       ├── data/        # Models and data sources
+│       ├── logic/       # ViewModels (Cubits/Blocs)
+│       └── ui/          # Views and widgets
 └── main.dart           # Application entry point
 ```
 
