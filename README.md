@@ -10,6 +10,13 @@ A modern Flutter application for tracking gold and silver prices and news update
 
 Gold News is a mobile application that provides real-time information about gold and silver markets. Built with Flutter, it offers a clean and intuitive interface for users to stay updated on precious metal prices and related news.
 
+## 📸 Screen Preview
+
+<div align="center">
+  <img src="assets/images/mockup_1.png" alt="Gold News App Preview" width="300"/>
+  <p><i>Current app interface - Home screen with Gold and Silver selection</i></p>
+</div>
+
 ## ✨ Features
 
 - 📊 Real-time gold and silver price tracking
