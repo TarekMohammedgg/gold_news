@@ -94,8 +94,15 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 **Tarek Mohammed**
 - GitHub: [@TarekMohammedgg](https://github.com/TarekMohammedgg)
 
+## 🎓 Workshop
+
+This project was developed as part of a workshop with **Eng. Ahmed Abd Elmonem**.
+
+Special thanks to [Eng. Ahmed Abd Elmonem](https://www.linkedin.com/in/ahmed2025/) for his invaluable mentorship and guidance throughout this project.
+
 ## 🙏 Acknowledgments
 
+- **Eng. Ahmed Abd Elmonem** - For mentoring and guiding me through this project
 - Flutter team for the amazing framework
 - All contributors and supporters of this project
 
