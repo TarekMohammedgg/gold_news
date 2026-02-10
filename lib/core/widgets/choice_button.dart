@@ -11,6 +11,7 @@ class choiceButton extends StatelessWidget {
     required this.onPressed,
     required this.title,
     required this.color,
+    required this.image,
   });
 
   final double heigh;
@@ -18,6 +19,7 @@ class choiceButton extends StatelessWidget {
   final void Function()? onPressed;
   final String title;
   final Color color;
+  final String image;
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +35,8 @@ class choiceButton extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(AppImages.goldImage, height: 50, width: 50),
+            Image.asset(image, height: 50, width: 50),
+            SizedBox(height: 10),
             Text(
               title,
               style: AppStyle.textOnChoiceCard.copyWith(color: color),
