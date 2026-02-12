@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gold_news/core/constants/app_colors.dart';
 import 'package:gold_news/core/constants/app_images.dart';
+import 'package:gold_news/core/constants/app_sizes.dart';
 import 'package:gold_news/core/constants/app_style.dart';
 
 class choiceButton extends StatelessWidget {
@@ -36,11 +37,8 @@ class choiceButton extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(image, height: 50, width: 50),
-            SizedBox(height: 10),
-            Text(
-              title,
-              style: AppStyle.textOnChoiceCard.copyWith(color: color),
-            ),
+            SizedBox(height: AppSizes.sizeBetweenItems),
+            Text(title, style: AppStyle.style30bold.copyWith(color: color)),
           ],
         ),
       ),

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gold_news/core/constants/app_colors.dart';
 import 'package:gold_news/core/constants/app_images.dart';
 import 'package:gold_news/core/constants/app_strings.dart';
+import 'package:gold_news/core/routing/routes.dart';
 import 'package:gold_news/core/widgets/choice_button.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -12,7 +13,6 @@ class HomeScreen extends StatelessWidget {
     double heigh = MediaQuery.sizeOf(context).height;
     double width = MediaQuery.sizeOf(context).width;
     return Scaffold(
-      backgroundColor: AppColors.homeScreenScaffoldBackground,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -23,7 +23,9 @@ class HomeScreen extends StatelessWidget {
               image: AppImages.goldImage,
               heigh: heigh,
               width: width,
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, AppRoutes.goldScreen);
+              },
             ),
             SizedBox(height: 20),
             choiceButton(
@@ -32,7 +34,9 @@ class HomeScreen extends StatelessWidget {
               image: AppImages.silverImage,
               heigh: heigh,
               width: width,
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, AppRoutes.silverScreen);
+              },
             ),
           ],
         ),

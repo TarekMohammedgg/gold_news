@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:gold_news/core/networking/dio_helper.dart';
 import 'package:gold_news/core/routing/app_router.dart';
 import 'package:gold_news/core/routing/routes.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await DioHelper.init();
   runApp(const MyApp());
 }
 
@@ -12,6 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData.dark(),
       initialRoute: AppRoutes.homeScreen,
       onGenerateRoute: AppRouter().generatRoute,
     );
